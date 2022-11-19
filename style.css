@@ -1,0 +1,121 @@
+@font-face {
+  font-family: fingerPaint;
+  src: url("./fonts/FingerPaint-Regular.ttf");
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+  overflow: hidden;
+}
+
+canvas {  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+} 
+
+.page {
+  z-index: 1;
+  position: relative;
+  height: 200vh;
+  color: black;
+}
+
+section {
+  height: 200vh;
+}
+
+.section-a {
+  height: 400vh;
+}
+
+.section-b {
+  height: 200vh;
+}
+
+.section-c {
+  height: 400vh;
+}
+
+.section-f {
+  height: 400vh;
+}
+
+.loading {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  color: white;
+  font-size: 10vh;
+  font-family: fingerPaint;
+}
+
+#mobile-disclaimer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: fingerPaint;
+  display: none;
+  z-index: 3;
+  font-size: 5vh;
+  text-align: center;
+}
+
+.loading label {
+  padding: 10vh 0px;
+}
+
+#progress-bar {
+  margin-bottom: 20vh;
+  width: 50%;
+  background-color: red;
+  border-radius: 20px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: red;
+  border-radius: 20px;
+  border: 5px solid white;
+}
+
+progress::-webkit-progress-value {
+  background-color: white;
+  border-radius: 15px;
+}
+
+.section-f {
+  position: relative;
+}
+
+.section-f p {
+  position: absolute;
+  bottom: 0px;
+  color: red;
+  font-size: 13px;
+  width: 100%;
+  display: flex;
+  align-items: center; /** Y-axis align **/
+  justify-content: center; /** X-axis align **/
+}
+
